@@ -17,8 +17,10 @@ public class LineComparison {
         System.out.println(line2);
         if(lengthOfLine == lengthOfLine2)
             System.out.println("both lines are equal");
+        else if (lengthOfLine > lengthOfLine2)
+            System.out.println("Line1 greater than Line2");
         else
-            System.out.println("lines are not equal");
+            System.out.println("Line2 is greater than Line1");
     }
     public static Line getLine() {
         double x1,y1,x2,y2;
