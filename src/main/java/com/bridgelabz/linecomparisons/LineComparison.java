@@ -15,13 +15,12 @@ public class LineComparison {
         System.out.println("length of line 1 is " + lengthOfLine2);
         System.out.println(line1);
         System.out.println(line2);
-        if(lengthOfLine == lengthOfLine2)
+        if(line1.equals(line2))
             System.out.println("both lines are equal");
-        else if (lengthOfLine > lengthOfLine2)
-            System.out.println("Line1 greater than Line2");
         else
-            System.out.println("Line2 is greater than Line1");
+            System.out.println("both lines are not equal");
     }
+
     public static Line getLine() {
         double x1,y1,x2,y2;
         Scanner scan = new Scanner(System.in);
